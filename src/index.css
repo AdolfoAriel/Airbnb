@@ -1,13 +1,195 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
 }
 
+*{
+  box-sizing: border-box;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+nav{
+height: 100px;
+
+display: flex;
+position: relative;
+padding:20px 36px ;
+box-shadow: 0px 2.98256px 7.4564px rgba(0,0,0,0.1);
+position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(246, 248, 251);
+}
+.User{
+  text-align: right;
+}
+.register{
+  position: absolute 50% left;
+  
+}
+
+.Form{
+  padding-top: 5cm;
+}
+.home{
+  position: left;
+}
+.nav--logo{
+  max-width: 100px;
+  position: left;
+}
+section{
+  padding: 20px;
+}
+
+.hero{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.hero-img{
+  margin-top: 5cm;
+  height: 18cm;
+  max-width: 32cm;
+  align-self: center;
+}
+
+.hero--header{
+  font-size: 4rem;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+text-align: left;
+margin: 1.5cm;
+
+}
+
+.hero--text{
+  font-size: 2rem;
+  text-align: left;
+  margin: 2.5cm;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style:oblique;
+
+}
+
+.container-cards{
+margin: 0cm;
+display: flex;
+justify-content: center;
+
+
+
+
+ 
+}
+
+.card-img{
+  border-radius: .5cm;
+  align-self: center;
+  height: 15cm;
+  margin: 1cm;
+}
+
+.icon{
+  color: rgb(227, 49, 49);
+}
+.boton{
+  text-align: right;
+  height: 3cm;
+}
+
+.Form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding-top: 5cm;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+}
+
+.Form h2 {
+  text-align: center;
+  margin-top: 0;
+}
+
+.Form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.Form input[type="text"],
+.Form input[type="email"],
+.Form input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+
+.Form button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+.Form button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+.payment-page {
+  max-width: 400px;
+  margin: 0 auto;
+  padding-top: 5cm;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+}
+
+.payment-page h1 {
+  text-align: center;
+  margin-top: 0;
+}
+
+.payment-page label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.payment-page input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+
+.payment-page button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+.payment-page button[type="submit"]:hover {
+  background-color: #3e8e41;
 }

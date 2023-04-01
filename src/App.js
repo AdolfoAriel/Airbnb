@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import NavBar from './components/NavBar';
+import Avacards  from './components/Ava-cards.js';
+import {  Route, Routes } from 'react-router-dom';
+import Biking from './pages/Biking';
+import Wedding from './pages/Wedding';
+import Swim from './pages/Swim';
+
+import Pay from './pages/Pay';
+import Form from './pages/Form';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+      <NavBar/>
+     
+      
+<Routes>
+  <Route path='/' element={<Avacards/>} />
+      <Route path='biking' element={<Biking/>}/>
+      <Route path='wedding' element={<Wedding/>}/>
+      <Route path = 'Swim' element={<Swim/>}/>
+      <Route path = 'Form' element={<Form/>}/>
+      <Route path = 'pay' element ={<Pay/>}/>
+</Routes>
     </div>
   );
 }
